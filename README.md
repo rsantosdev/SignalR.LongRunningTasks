@@ -8,14 +8,14 @@ Como reproduzir a demo
 <ul>
 <li>Baixe e compile a solução.</li>
 <li>Abra um browser e logue como administrador <br/>
-  user: admin
+  user: admin <br/>
   pass: 123456 <br/>
 Após logar acesse a aba admin.</li>
 <li>Em outro browser logue ou cadastre-se, alguns usuários para teste: <br/>
-  user: rsantos
+  user: rsantos <br/>
   pass: 123456 <br/>
   
-  user: dimitri
+  user: dimitri <br/>
   pass: 123456</li>
 </ul>
   
