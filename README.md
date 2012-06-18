@@ -1,21 +1,23 @@
 SignalR.LongRunningTasks
 ========
 
-Cria��o e notifica��o em tempo real de tarefas com longa dura��o no servidor.
+Criação e notificaçãoo em tempo real de tarefas com longa duração no servidor.
 
 Como reproduzir a demo
 ========
-1 - Baixe e compile a solução. 
-2 - Abra um browser e logue como administrador
+<ul>
+<li>Baixe e compile a solução.</li>
+<li>Abra um browser e logue como administrador <br/>
   user: admin
-  pass: 123456
-Após lodar acesse a aba admin.
-3 - Em outro browser logue ou cadastre-se, alguns usuários para teste:
+  pass: 123456 <br/>
+Após logar acesse a aba admin.</li>
+<li>Em outro browser logue ou cadastre-se, alguns usuários para teste: <br/>
   user: rsantos
-  pass: 123456
+  pass: 123456 <br/>
   
   user: dimitri
-  pass: 123456
+  pass: 123456</li>
+</ul>
   
 Selecione algume tarefa para ser iniciada em algum dos usuários logados e você verá em tempo real o progresso da task pela
 aba do administrador.
