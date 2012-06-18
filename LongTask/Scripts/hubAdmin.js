@@ -2,7 +2,7 @@
     var adminHub = $.connection.adminHub;
 
     adminHub.createAdminProc = function (procId, taskName, userName) {
-        var $tr = $('<tr id="' + procId + '"><td>' + userName + ' - ' + taskName + '</td><td><p>0%</p><div class="progress progress-striped active"><div class="bar" style="width: 0%;"></div></div></td><td>Running...</td><td></td></tr>');
+        var $tr = $('<tr id="' + procId + '"><td>' + userName + ' - ' + taskName + '</td><td><p>0%</p><div class="progress progress-striped active"><div class="bar" style="width: 0%;"></div></div></td><td>Running...</td><td><button class="btn btn-danger">Stop</button></td></tr>');
         $tr.appendTo('#tblTasksAdmin>tbody');
     };
 
@@ -32,6 +32,11 @@
         $tr.find('td:nth-child(3)').text('Canceled');
         $tr.find('td:last').html('');
     };
+
+    $('#tblTasksAdmin').on('click', 'button', function (e) {
+        e.preventDefault();
+        adminHub.cancelProc($(this).parent().parent().attr('id'));
+    });
 
     $.connection.hub.start();
 })
